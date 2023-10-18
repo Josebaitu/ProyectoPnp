@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello World")
-        HUD.flash(.success, delay: 3.0)
+        //HUD.flash(.success, delay: 3.0)
         //PKHUD.sharedHUD.show() //Mostrar
         //PKHUD.sharedHUD.hide() //Ocultar
     }

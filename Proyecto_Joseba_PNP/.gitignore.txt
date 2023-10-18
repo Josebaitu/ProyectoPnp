@@ -1,0 +1,22 @@
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Paquetes #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs y Databases #
+*.log
+*.sql
+*.sqlite
