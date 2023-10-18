@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello World")
+        print("Actualización")
         //HUD.flash(.success, delay: 3.0)
         //PKHUD.sharedHUD.show() //Mostrar
         //PKHUD.sharedHUD.hide() //Ocultar
