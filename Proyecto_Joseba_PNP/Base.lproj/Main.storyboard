@@ -31,6 +31,9 @@
                             <constraint firstItem="7xq-qh-bZ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z5y-u6-zd9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="payNoPainLabel" destination="7xq-qh-bZ3" id="dH0-Wv-qTT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

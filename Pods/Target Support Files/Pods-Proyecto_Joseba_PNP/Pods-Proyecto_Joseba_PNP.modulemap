@@ -1,0 +1,6 @@
+framework module Pods_Proyecto_Joseba_PNP {
+  umbrella header "Pods-Proyecto_Joseba_PNP-umbrella.h"
+
+  export *
+  module * { export * }
+}
