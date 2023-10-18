@@ -13,9 +13,11 @@ class PopUpViewController: UIViewController {
     var surNameUser: String = ""
     //Outlets
     @IBOutlet weak var popUpCustomLabel: UILabel!
+    @IBOutlet weak var acceptPopUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        acceptPopUpButton.layer.cornerRadius = 12.0
         popUpCustomLabel.text = "Bienvenido \(nameUser) \(surNameUser)"
     }
 

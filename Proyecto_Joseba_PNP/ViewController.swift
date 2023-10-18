@@ -17,11 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var surnameTextField: UITextField!
 
+    @IBOutlet weak var acceptButton: UIButton!
+    @IBOutlet weak var acceptCustomButton: UIButton!
     
     //Variables
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        acceptButton.layer.cornerRadius = 12.0
+        acceptCustomButton.layer.cornerRadius = 12.0
     }
 
     @IBAction func acceptButtonAction(_ sender: Any) {

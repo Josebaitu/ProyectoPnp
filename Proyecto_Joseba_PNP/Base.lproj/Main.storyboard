@@ -32,7 +32,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zDt-If-9IF">
                                 <rect key="frame" x="16" y="173" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msf-GW-MAe">
                                 <rect key="frame" x="16" y="223" width="361" height="21"/>
@@ -43,10 +43,12 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6A-cF-ysg">
                                 <rect key="frame" x="16" y="252" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L19-oT-RMV">
                                 <rect key="frame" x="155" y="409" width="84" height="35"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Aceptar"/>
                                 <connections>
@@ -55,6 +57,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4V-dl-EAm">
                                 <rect key="frame" x="155" y="475" width="84" height="35"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Aceptar Custom"/>
                                 <connections>
@@ -89,6 +93,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="acceptButton" destination="L19-oT-RMV" id="K7b-Y1-htm"/>
+                        <outlet property="acceptCustomButton" destination="j4V-dl-EAm" id="Qvn-Wj-Al7"/>
                         <outlet property="nameLabel" destination="gGS-4O-FXE" id="H2H-fb-U4d"/>
                         <outlet property="nameTextField" destination="zDt-If-9IF" id="Y1E-Ap-2zm"/>
                         <outlet property="payNoPainLabel" destination="7xq-qh-bZ3" id="mCF-4c-JP2"/>
@@ -116,7 +122,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-fQ-R4r">
-                                <rect key="frame" x="0.0" y="497" width="393" height="35"/>
+                                <rect key="frame" x="100" y="497" width="193" height="35"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Aceptar"/>
                                 <connections>
@@ -125,17 +133,18 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jkG-Ad-qhl"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="t4l-fQ-R4r" firstAttribute="leading" secondItem="dnL-3S-ZVu" secondAttribute="leading" id="5pd-70-7bo"/>
-                            <constraint firstItem="t4l-fQ-R4r" firstAttribute="trailing" secondItem="dnL-3S-ZVu" secondAttribute="trailing" id="Is2-69-tDg"/>
+                            <constraint firstItem="t4l-fQ-R4r" firstAttribute="leading" secondItem="jkG-Ad-qhl" secondAttribute="leading" constant="100" id="Dbf-w7-jDO"/>
                             <constraint firstItem="dnL-3S-ZVu" firstAttribute="top" secondItem="jkG-Ad-qhl" secondAttribute="top" constant="411" id="UFI-w3-UWq"/>
                             <constraint firstItem="dnL-3S-ZVu" firstAttribute="leading" secondItem="jkG-Ad-qhl" secondAttribute="leading" id="aST-qD-ZYR"/>
                             <constraint firstItem="t4l-fQ-R4r" firstAttribute="top" secondItem="dnL-3S-ZVu" secondAttribute="bottom" constant="50" id="l9h-IS-My9"/>
+                            <constraint firstItem="jkG-Ad-qhl" firstAttribute="trailing" secondItem="t4l-fQ-R4r" secondAttribute="trailing" constant="100" id="nS1-Mx-Nn3"/>
                             <constraint firstItem="jkG-Ad-qhl" firstAttribute="trailing" secondItem="dnL-3S-ZVu" secondAttribute="trailing" id="v2d-Sy-W5s"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="acceptPopUpButton" destination="t4l-fQ-R4r" id="IFs-M8-Ms7"/>
                         <outlet property="popUpCustomLabel" destination="dnL-3S-ZVu" id="weA-LE-ADr"/>
                     </connections>
                 </viewController>
@@ -147,6 +156,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
