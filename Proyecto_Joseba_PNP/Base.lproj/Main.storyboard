@@ -46,7 +46,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L19-oT-RMV">
-                                <rect key="frame" x="155" y="409" width="84" height="35"/>
+                                <rect key="frame" x="100" y="409" width="193" height="35"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4V-dl-EAm">
-                                <rect key="frame" x="155" y="475" width="84" height="35"/>
+                                <rect key="frame" x="100" y="475" width="193" height="35"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -79,10 +79,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gGS-4O-FXE" secondAttribute="trailing" constant="16" id="WYg-Oi-tDP"/>
                             <constraint firstItem="j4V-dl-EAm" firstAttribute="top" secondItem="L19-oT-RMV" secondAttribute="bottom" constant="31" id="YNb-57-H2z"/>
                             <constraint firstItem="gGS-4O-FXE" firstAttribute="top" secondItem="7xq-qh-bZ3" secondAttribute="bottom" constant="50" id="ayE-QY-JJc"/>
-                            <constraint firstItem="L19-oT-RMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="dui-LN-ZQr"/>
+                            <constraint firstItem="L19-oT-RMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="dui-LN-ZQr"/>
                             <constraint firstItem="N6A-cF-ysg" firstAttribute="top" secondItem="msf-GW-MAe" secondAttribute="bottom" constant="8" symbolic="YES" id="hwL-QA-A4i"/>
                             <constraint firstItem="msf-GW-MAe" firstAttribute="leading" secondItem="zDt-If-9IF" secondAttribute="leading" id="mCg-c1-QTy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L19-oT-RMV" secondAttribute="trailing" constant="154" id="mbw-8U-8tT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L19-oT-RMV" secondAttribute="trailing" constant="100" id="mbw-8U-8tT"/>
                             <constraint firstItem="gGS-4O-FXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="o7k-uI-AdJ"/>
                             <constraint firstItem="j4V-dl-EAm" firstAttribute="trailing" secondItem="L19-oT-RMV" secondAttribute="trailing" id="pxu-td-NCB"/>
                             <constraint firstItem="N6A-cF-ysg" firstAttribute="leading" secondItem="msf-GW-MAe" secondAttribute="leading" id="tto-xp-Fc2"/>
