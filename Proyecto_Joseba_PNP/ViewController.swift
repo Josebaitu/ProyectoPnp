@@ -61,6 +61,14 @@ class ViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    func mandatoryInputs() {
+        if nameTextField.text == "" || surnameTextField.text == "" || dateTextField.text == "" {
+            let emptyAlert = UIAlertController(title: "Error", message: "Tienes que completar todos los campos", preferredStyle: .alert)
+            emptyAlert.addAction(UIAlertAction(title: "Aceptar", style: .default))
+            self.present(emptyAlert, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func acceptButtonAction(_ sender: Any) {
         let nameUser = nameTextField.text
         let surnameUser = surnameTextField.text
@@ -72,6 +80,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func acceptCustomButtonAction(_ sender: Any) {
+        mandatoryInputs()
         performSegue(withIdentifier: "PopUpIdentifier", sender: self)
     }
     
