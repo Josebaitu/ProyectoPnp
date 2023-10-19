@@ -11,6 +11,7 @@ import Foundation
 class PopUpViewController: UIViewController {
     var nameUser: String = ""
     var surNameUser: String = ""
+    var dateUser: String = ""
     //Outlets
     @IBOutlet weak var popUpCustomLabel: UILabel!
     @IBOutlet weak var acceptPopUpButton: UIButton!
@@ -18,7 +19,7 @@ class PopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         acceptPopUpButton.layer.cornerRadius = 12.0
-        popUpCustomLabel.text = "Bienvenido \(nameUser) \(surNameUser)"
+        popUpCustomLabel.text = "Bienvenido \(nameUser) \(surNameUser) con fecha de cumpleaños \(dateUser)"
     }
 
     @IBAction func returnButtonAction(_ sender: Any) {
