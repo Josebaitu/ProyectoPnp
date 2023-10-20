@@ -81,6 +81,11 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func newsTableViewButton(_ sender: Any) {
+        performSegue(withIdentifier: "newTableViewIdentifier", sender: self)
+    }
+    
+    
     @IBAction func acceptCustomButtonAction(_ sender: Any) {
         mandatoryInputs()
         performSegue(withIdentifier: "PopUpIdentifier", sender: self)

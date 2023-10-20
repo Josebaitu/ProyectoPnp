@@ -63,6 +63,19 @@ class ApiViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "chosenViewSegue" {
+            let indexPath = newsTableView.indexPathForSelectedRow
+            let newView = segue.destination as? ChosenNewViewController
+            let information = newsArticle[indexPath!.row]
+            newView!.chosenTitle = information.title!
+            newView!.chosenDescription = information.description!
+            newView!.chosenImageUrl = information.urlToImage ?? ""
+        
+            }
+        }
+    
+    
 }
 
 extension ApiViewController: UITableViewDataSource, UITableViewDelegate {
@@ -84,6 +97,10 @@ extension ApiViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "chosenViewSegue", sender: newsArticle[indexPath.row])
     }
     
     
