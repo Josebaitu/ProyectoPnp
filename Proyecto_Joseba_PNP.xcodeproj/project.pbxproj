@@ -18,6 +18,9 @@
 		05B677442ADE7708003CAC26 /* Proyecto_Joseba_PNPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B677432ADE7708003CAC26 /* Proyecto_Joseba_PNPUITests.swift */; };
 		05B677462ADE7708003CAC26 /* Proyecto_Joseba_PNPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B677452ADE7708003CAC26 /* Proyecto_Joseba_PNPUITestsLaunchTests.swift */; };
 		05B677532AE00ED1003CAC26 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B677522AE00ED1003CAC26 /* PopUpViewController.swift */; };
+		05B677562AE17165003CAC26 /* ApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B677552AE17164003CAC26 /* ApiViewController.swift */; };
+		05B677592AE27610003CAC26 /* NewsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B677572AE2760F003CAC26 /* NewsCellTableViewCell.swift */; };
+		05B6775A2AE27610003CAC26 /* NewsCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05B677582AE2760F003CAC26 /* NewsCellTableViewCell.xib */; };
 		342725629BC221838F801B8B /* Pods_Proyecto_Joseba_PNP_Proyecto_Joseba_PNPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104405F2931D26EE29572C1F /* Pods_Proyecto_Joseba_PNP_Proyecto_Joseba_PNPUITests.framework */; };
 		3B662DF92EEAFCC9651C8D91 /* Pods_Proyecto_Joseba_PNP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB9163A5D1D08366E261FB1 /* Pods_Proyecto_Joseba_PNP.framework */; };
 		611A911CFFDF92EEC7D15F4C /* Pods_Proyecto_Joseba_PNPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397820F9688F24220AFCC585 /* Pods_Proyecto_Joseba_PNPTests.framework */; };
@@ -56,6 +59,9 @@
 		05B677432ADE7708003CAC26 /* Proyecto_Joseba_PNPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto_Joseba_PNPUITests.swift; sourceTree = "<group>"; };
 		05B677452ADE7708003CAC26 /* Proyecto_Joseba_PNPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto_Joseba_PNPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		05B677522AE00ED1003CAC26 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		05B677552AE17164003CAC26 /* ApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewController.swift; sourceTree = "<group>"; };
+		05B677572AE2760F003CAC26 /* NewsCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellTableViewCell.swift; sourceTree = "<group>"; };
+		05B677582AE2760F003CAC26 /* NewsCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCellTableViewCell.xib; sourceTree = "<group>"; };
 		104405F2931D26EE29572C1F /* Pods_Proyecto_Joseba_PNP_Proyecto_Joseba_PNPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proyecto_Joseba_PNP_Proyecto_Joseba_PNPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E10596044C73A31FEFD113 /* Pods-Proyecto_Joseba_PNPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto_Joseba_PNPTests.release.xcconfig"; path = "Target Support Files/Pods-Proyecto_Joseba_PNPTests/Pods-Proyecto_Joseba_PNPTests.release.xcconfig"; sourceTree = "<group>"; };
 		1EB9163A5D1D08366E261FB1 /* Pods_Proyecto_Joseba_PNP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proyecto_Joseba_PNP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +126,8 @@
 		05B6771E2ADE76FE003CAC26 /* Proyecto_Joseba_PNP */ = {
 			isa = PBXGroup;
 			children = (
+				05B6775B2AE27678003CAC26 /* Cell */,
+				05B677542AE17123003CAC26 /* API */,
 				05B6771F2ADE76FE003CAC26 /* AppDelegate.swift */,
 				05B677212ADE76FE003CAC26 /* SceneDelegate.swift */,
 				05B677232ADE76FE003CAC26 /* ViewController.swift */,
@@ -148,6 +156,23 @@
 				05B677452ADE7708003CAC26 /* Proyecto_Joseba_PNPUITestsLaunchTests.swift */,
 			);
 			path = Proyecto_Joseba_PNPUITests;
+			sourceTree = "<group>";
+		};
+		05B677542AE17123003CAC26 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				05B677552AE17164003CAC26 /* ApiViewController.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		05B6775B2AE27678003CAC26 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				05B677572AE2760F003CAC26 /* NewsCellTableViewCell.swift */,
+				05B677582AE2760F003CAC26 /* NewsCellTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		72C698C6C1758CAADB08295C /* Pods */ = {
@@ -284,6 +309,7 @@
 			files = (
 				05B6772F2ADE7707003CAC26 /* LaunchScreen.storyboard in Resources */,
 				05B6772C2ADE7707003CAC26 /* Assets.xcassets in Resources */,
+				05B6775A2AE27610003CAC26 /* NewsCellTableViewCell.xib in Resources */,
 				05B677272ADE76FE003CAC26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +439,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B677532AE00ED1003CAC26 /* PopUpViewController.swift in Sources */,
+				05B677592AE27610003CAC26 /* NewsCellTableViewCell.swift in Sources */,
+				05B677562AE17165003CAC26 /* ApiViewController.swift in Sources */,
 				05B677242ADE76FE003CAC26 /* ViewController.swift in Sources */,
 				05B677202ADE76FE003CAC26 /* AppDelegate.swift in Sources */,
 				05B6772A2ADE76FE003CAC26 /* Proyecto_Joseba_PNP.xcdatamodeld in Sources */,

@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var acceptButton: UIButton!
     @IBOutlet weak var acceptCustomButton: UIButton!
+    @IBOutlet weak var newsButton: UIButton!
     
     //Variables
     let datePicker = UIDatePicker()
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         acceptButton.isHidden = true
         acceptButton.layer.cornerRadius = 12.0
         acceptCustomButton.layer.cornerRadius = 12.0
+        newsButton.layer.cornerRadius = 12.0
     }
     
     func createToolBar() -> UIToolbar {

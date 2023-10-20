@@ -76,11 +76,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhB-4I-A8I">
+                                <rect key="frame" x="100" y="587" width="193" height="35"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Noticias"/>
+                                <connections>
+                                    <segue destination="TzF-Re-L3H" kind="show" id="EMF-c6-nQJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="N6A-cF-ysg" firstAttribute="trailing" secondItem="msf-GW-MAe" secondAttribute="trailing" id="1mE-6v-rZP"/>
+                            <constraint firstItem="mhB-4I-A8I" firstAttribute="leading" secondItem="j4V-dl-EAm" secondAttribute="leading" id="9fx-PU-m4r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7xq-qh-bZ3" secondAttribute="trailing" constant="129" id="CIm-VA-Bl6"/>
                             <constraint firstItem="zDt-If-9IF" firstAttribute="top" secondItem="gGS-4O-FXE" secondAttribute="bottom" constant="8" symbolic="YES" id="EuQ-bY-f6p"/>
                             <constraint firstItem="edh-qt-bLQ" firstAttribute="leading" secondItem="N6A-cF-ysg" secondAttribute="leading" id="FNx-b8-SLb"/>
@@ -95,6 +106,7 @@
                             <constraint firstItem="gGS-4O-FXE" firstAttribute="top" secondItem="7xq-qh-bZ3" secondAttribute="bottom" constant="50" id="ayE-QY-JJc"/>
                             <constraint firstItem="8te-O1-Atc" firstAttribute="top" secondItem="msf-GW-MAe" secondAttribute="bottom" constant="50" id="dpq-PV-ghJ"/>
                             <constraint firstItem="L19-oT-RMV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="dui-LN-ZQr"/>
+                            <constraint firstItem="mhB-4I-A8I" firstAttribute="top" secondItem="j4V-dl-EAm" secondAttribute="bottom" constant="77" id="guI-nE-Wvq"/>
                             <constraint firstItem="N6A-cF-ysg" firstAttribute="top" secondItem="msf-GW-MAe" secondAttribute="bottom" constant="8" symbolic="YES" id="hwL-QA-A4i"/>
                             <constraint firstItem="8te-O1-Atc" firstAttribute="trailing" secondItem="msf-GW-MAe" secondAttribute="trailing" id="ioK-Ct-qce"/>
                             <constraint firstItem="msf-GW-MAe" firstAttribute="leading" secondItem="zDt-If-9IF" secondAttribute="leading" id="mCg-c1-QTy"/>
@@ -102,6 +114,7 @@
                             <constraint firstItem="gGS-4O-FXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="o7k-uI-AdJ"/>
                             <constraint firstItem="j4V-dl-EAm" firstAttribute="trailing" secondItem="L19-oT-RMV" secondAttribute="trailing" id="pxu-td-NCB"/>
                             <constraint firstItem="N6A-cF-ysg" firstAttribute="leading" secondItem="msf-GW-MAe" secondAttribute="leading" id="tto-xp-Fc2"/>
+                            <constraint firstItem="mhB-4I-A8I" firstAttribute="trailing" secondItem="j4V-dl-EAm" secondAttribute="trailing" id="wdG-qA-FpC"/>
                             <constraint firstItem="edh-qt-bLQ" firstAttribute="trailing" secondItem="N6A-cF-ysg" secondAttribute="trailing" id="xAL-mR-vxq"/>
                             <constraint firstItem="zDt-If-9IF" firstAttribute="trailing" secondItem="gGS-4O-FXE" secondAttribute="trailing" id="z2n-fA-f2o"/>
                             <constraint firstItem="7xq-qh-bZ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z5y-u6-zd9"/>
@@ -116,6 +129,7 @@
                         <outlet property="dateTextField" destination="edh-qt-bLQ" id="KTu-ii-tgJ"/>
                         <outlet property="nameLabel" destination="gGS-4O-FXE" id="H2H-fb-U4d"/>
                         <outlet property="nameTextField" destination="zDt-If-9IF" id="Y1E-Ap-2zm"/>
+                        <outlet property="newsButton" destination="mhB-4I-A8I" id="28t-Zh-icH"/>
                         <outlet property="payNoPainLabel" destination="7xq-qh-bZ3" id="mCF-4c-JP2"/>
                         <outlet property="surnameLabel" destination="msf-GW-MAe" id="GRl-7v-r35"/>
                         <outlet property="surnameTextField" destination="N6A-cF-ysg" id="Ae1-dN-kzD"/>
@@ -173,6 +187,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7t-ia-Dqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="907.63358778625945" y="3.5211267605633805"/>
+        </scene>
+        <!--Api View Controller-->
+        <scene sceneID="vKY-lj-MW6">
+            <objects>
+                <viewController id="TzF-Re-L3H" customClass="ApiViewController" customModule="Proyecto_Joseba_PNP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NcH-J7-36I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zel-wc-Lwf">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" rowHeight="174" id="gA4-Vl-Sbl">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="174"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gA4-Vl-Sbl" id="BFB-zu-Vbm">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="174"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dta-s8-Nyl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zel-wc-Lwf" firstAttribute="top" secondItem="dta-s8-Nyl" secondAttribute="top" id="1uw-QO-y6z"/>
+                            <constraint firstItem="dta-s8-Nyl" firstAttribute="trailing" secondItem="Zel-wc-Lwf" secondAttribute="trailing" id="Jwf-e8-2bl"/>
+                            <constraint firstItem="Zel-wc-Lwf" firstAttribute="leading" secondItem="dta-s8-Nyl" secondAttribute="leading" id="ReD-jb-Kf4"/>
+                            <constraint firstItem="dta-s8-Nyl" firstAttribute="bottom" secondItem="Zel-wc-Lwf" secondAttribute="bottom" id="pb7-wp-dIp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ErS-5u-bdF"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="Zel-wc-Lwf" id="gg5-1w-GpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gU5-wb-rYD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907.63358778625945" y="804.92957746478874"/>
         </scene>
     </scenes>
     <resources>
